@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://tmshop-server.onrender.com/api/auth/register",
+      "https://tm-shop.azurewebsites.net/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://tmshop-server.onrender.com/api/auth/login",
+      "https://tm-shop.azurewebsites.net/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://tmshop-server.onrender.com/api/auth/logout",
+      "https://tm-shop.azurewebsites.net/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://tmshop-server.onrender.com/api/auth/check-auth",
+      "https://tm-shop.azurewebsites.net/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {

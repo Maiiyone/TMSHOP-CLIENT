@@ -10,7 +10,7 @@ export const addReview = createAsyncThunk(
   "/order/addReview",
   async (formdata) => {
     const response = await axios.post(
-      `https://tmshop-server.onrender.com/api/shop/review/add`,
+      `https://tm-shop.azurewebsites.net/api/shop/review/add`,
       formdata
     );
 
@@ -20,7 +20,7 @@ export const addReview = createAsyncThunk(
 
 export const getReviews = createAsyncThunk("/order/getReviews", async (id) => {
   const response = await axios.get(
-    `https://tmshop-server.onrender.com/api/shop/review/${id}`
+    `https://tm-shop.azurewebsites.net/api/shop/review/${id}`
   );
 
   return response.data;

@@ -50,7 +50,7 @@ function ProductImageUpload({
     const data = new FormData();
     data.append("my_file", imageFile);
     const response = await axios.post(
-      "https://tmshop-server.onrender.com/api/admin/products/upload-image",
+      "https://tm-shop.azurewebsites.net/api/admin/products/upload-image",
       data
     );
     console.log(response, "response");
